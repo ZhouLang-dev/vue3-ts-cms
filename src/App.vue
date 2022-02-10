@@ -1,17 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <!-- <h1>{{ $store.state.name }}</h1> -->
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+    <!-- <router-link to="/login">登录</router-link> -->
+    <!-- <router-link to="/main">首页</router-link> -->
+    <!-- <router-view></router-view> -->
+    <el-button type="primary">Primary</el-button>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { useStore } from 'vuex'
+// import { ElButton } from 'element-plus'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    const store = useStore()
+    console.log(store.state)
   }
+  // components: {
+  //   ElButton
+  // }
 })
 </script>
 

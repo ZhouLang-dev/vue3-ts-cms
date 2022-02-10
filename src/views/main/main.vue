@@ -1,0 +1,15 @@
+<template>
+  <div>
+    <p>首页</p>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'login'
+})
+</script>
+
+<style lang="less" scoped></style>
