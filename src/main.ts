@@ -3,8 +3,9 @@ import App from './App.vue'
 
 import router from './router'
 import store from './store'
-// import 'element-plus/theme-chalk/base.css'
-// import 'element-plus/theme-chalk/el-button.css'
+import '@/assets/css/index.less'
+import 'element-plus/theme-chalk/el-loading.css'
+import 'element-plus/theme-chalk/base.css'
 
 const app = createApp(App)
 app.use(router)

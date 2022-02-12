@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    // 目标代码(ts -> js(es5/6/7))
     "target": "esnext",
+    // 目标代码需要使用的模块化方案
     "module": "esnext",
+    // 严格检查
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
